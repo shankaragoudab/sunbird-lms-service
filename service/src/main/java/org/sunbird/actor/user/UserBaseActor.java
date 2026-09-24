@@ -317,7 +317,7 @@ public abstract class UserBaseActor extends BaseActor {
    * KPI 1.1 (self-registration karma points): publishes SELF_REGISTRATION to the karma points unified
    * topic once a user has been created, when the user's sourceCreationType is in
    * karma_points_self_registration_eligible_source_types (self / bulk / custom registration).
-   * Agreed contract: {"eventType": "SELF_REGISTRATION", "data": {"edata": {"userId": "..."}}, "version": 1}.
+   * Agreed contract: {"eventType": "SELF_REGISTRATION_KARMA_POINT", "data": {"edata": {"userId": "..."}}, "version": 1}.
    * Never throws: a publishing failure must not fail user creation.
    */
   protected void publishSelfRegistrationKarmaEvent(
